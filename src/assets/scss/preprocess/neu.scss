@@ -1,0 +1,282 @@
+/* ------------------------------------------------------------ *\
+  Vendor
+\* ------------------------------------------------------------ */
+
+//@import '~vendor-name/vendor.scss/css';
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald');
+@import 'style.scss';
+
+/* ------------------------------------------------------------ *\
+	Generic
+\* ------------------------------------------------------------ */
+
+@import "bootstrap/bootstrap.scss";
+@import 'generic/variables';
+@import 'generic/reset';
+@import 'generic/fonts';
+@import 'generic/mixins';
+@import 'generic/functions';
+@import 'generic/base';
+@import 'generic/helpers';
+@import "cms/author";
+@import "cms/blog-single";
+@import "cms/bookmark";
+@import "cms/component";
+@import "cms/contact";
+@import "cms/featured-slider";
+@import "cms/gallery";
+@import "cms/header";
+@import "cms/latest-posts";
+@import "components/neucards";
+@import "generic/neu";
+@import "cms/section-title";
+@import "cms/sidebar";
+@import "cms/styleguide";
+@import "cms/tag";
+@import "cms/top-authors";
+
+/* ------------------------------------------------------------ *\
+	Components
+\* ------------------------------------------------------------ */
+
+@import 'components/accordion';
+@import 'components/animation';
+@import 'components/bar';
+@import 'components/block';
+@import 'components/box';
+@import 'components/box-different';
+@import 'components/btn';
+@import 'components/btn-dark';
+@import 'components/btn-round';
+@import 'components/btn-small';
+@import 'components/checkbox';
+@import 'components/checkbox-alt';
+@import 'components/checkbox-different';
+@import 'components/components';
+@import 'components/dropdown';
+@import 'components/field';
+@import 'components/footer.scss';
+@import 'components/grid';
+@import 'components/header';
+@import 'components/icons';
+@import 'components/item';
+@import 'components/logo';
+@import 'components/main';
+@import 'components/nav';
+@import 'components/nav-trigger';
+@import 'components/panel';
+@import 'components/pp-section';
+@import 'components/radio';
+@import 'components/radio-alt';
+@import 'components/radio-group';
+@import 'components/range-slider';
+@import 'components/range-slider-alt';
+@import 'components/section';
+@import 'components/section-about';
+@import 'components/select';
+@import 'components/shell';
+@import 'components/slider';
+@import 'components/switch';
+@import 'components/tab';
+@import 'components/tabs';
+@import 'components/tag';
+@import 'components/wrapper';
+@import 'generic/sloppy';
+
+/* ------------------------------------------------------------ *\
+	Overwrites
+\* ------------------------------------------------------------ */
+
+//@import 'overwrites/';
+@import 'components/accordion/accordion.scss';
+@import 'components/animate/animate.scss';
+@import 'components/base/base.scss';
+@import 'components/block/block.scss';
+@import 'components/blurb/blurb.scss';
+@import 'components/box/box.scss';
+@import 'components/button/button.scss';
+@import 'components/countdown/countdown.scss';
+@import 'components/counter/counter.scss';
+@import 'components/divider/divider.scss';
+@import 'components/font-awesome/font-awesome.scss';
+@import 'components/form/form.scss';
+@import 'components/form-output/form-output.scss';
+@import 'components/fullpage/fullpage.scss';
+@import 'components/grid/grid.scss';
+@import 'components/icon/icon.scss';
+@import 'components/image-hover/image-hover.scss';
+@import 'components/image-svg/image-svg.scss';
+@import 'components/lightgallery/lightgallery.scss';
+@import 'components/list/list.scss';
+@import 'components/mdi/mdi.scss';
+@import 'components/media/media.scss';
+@import 'components/modal/modal.scss';
+@import 'components/multiswitch/multiswitch.scss';
+@import 'components/nav/nav.scss';
+@import 'components/owl-carousel/owl.carousel.scss';
+@import 'components/partner/partner.scss';
+@import 'components/post/post.scss';
+@import 'components/preloader/preloader.scss';
+@import 'components/pricing/pricing.scss';
+@import 'components/quote/quote.scss';
+@import 'components/rd-mailform/rd-mailform.scss';
+@import 'components/rd-navbar/rd-navbar.scss';
+@import 'components/regula/regula.scss';
+@import 'components/rights/rights.scss';
+@import 'components/slick/slick.scss';
+@import 'components/snackbar/snackbar.scss';
+@import 'components/swiper/swiper.scss';
+@import 'components/table/table.scss';
+@import 'components/team/team.scss';
+@import 'components/to-top/to-top.scss';
+@import 'components/tooltip/tooltip.scss';
+@import 'components/video/video.scss';
+@import "_sidebar.scss";
+.section {
+    overflow: hidden;
+}
+
+.neubtn {
+    color: #ffffff;
+    margin-top: 35px;
+    width: 35% !important;
+}
+
+.oswald {
+    font-family: 'Oswald' !important;
+    font-weight: 500 !important;
+    text-transform: uppercase !important;
+}
+
+.lgtext {
+    font-size: 1.1em !important;
+    text-transform: uppercase !important;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.neubtn a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+    background-color: transparent;
+}
+
+.effect-underline {
+    font-family: 'Oswald' !important;
+    font-weight: 900 !important;
+    text-transform: uppercase !important;
+}
+
+
+/*effect-underline*/
+
+.effect-underline:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    display: inline-block;
+    height: 1em;
+    width: 100%;
+    border-bottom: 1px solid;
+    margin-top: 10px;
+    opacity: 0;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: scale(0, 1);
+    transform: scale(0, 1);
+}
+
+.effect-underline:hover:after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+
+/*effect-box*/
+
+.effect-box:after,
+.effect-box:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    display: inline-block;
+    height: 1em;
+    width: 100%;
+    margin-top: 10px;
+    opacity: 0;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+}
+
+.effect-box:before {
+    border-left: 1px solid;
+    border-right: 1px solid;
+    -webkit-transform: scale(1, 0);
+    transform: scale(1, 0);
+}
+
+.effect-box:after {
+    border-bottom: 1px solid;
+    border-top: 1px solid;
+    -webkit-transform: scale(0, 1);
+    transform: scale(0, 1);
+}
+
+.effect-box:hover:after,
+.effect-box:hover:before {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+
+/* effect-shine */
+
+.effect-shine:hover {
+    -webkit-mask-image: linear-gradient(-75deg, rgba(0, 0, 0, .6) 30%, #000 50%, rgba(0, 0, 0, .6) 70%) !important;
+    -webkit-mask-size: 200%;
+    animation: shine 2s infinite;
+}
+
+@-webkit-keyframes shine {
+    from {
+        -webkit-mask-position: 150%;
+    }
+    to {
+        -webkit-mask-position: -50%;
+    }
+}
+
+.to-top {
+    background: linear-gradient(-75deg, rgba(0, 0, 0, .6) 30%, #000 50%, rgba(0, 0, 0, .6) 70%);
+}
+
+.to-top:hover {
+    background: #6c5ba7;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+    color: #efefef;
+}
+
+ul,
+ol {
+    list-style: disc;
+}

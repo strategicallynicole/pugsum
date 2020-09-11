@@ -35,6 +35,14 @@ module.exports = {
 				from: "./src/assets/images/**/*.{png,jpg,jpeg}",
 				to: "./assets/images/[name].webp",
 			},
+			{
+				from: "./src/components",
+				to: "./components",
+			},
+			{
+				from: "./src/media",
+				to: "./media",
+			},
 		]),
 		new ImageminWebpackPlugin({
 			plugins: [

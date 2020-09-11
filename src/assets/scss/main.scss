@@ -1,7 +1,8 @@
 @charset "UTF-8";
 @import "./core/generic_boxsizing";
 @import "./vendors/tailwind";
-
+@import "preprocess/_neu/style";
+@import "./core/generic_boxsizing";
 p {
 	@apply font-bold;
 }
